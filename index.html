@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GuarachaQ RX2 Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎶 GuarachaQ RX2 Edition</h1>
+    <p>La guaracha suena mejor con estilo DJ</p>
+  </header>
+
+  <main class="container">
+    
+ 
+    <section class="dj-console">
+      <img src="rx2.jpg" alt="Pioneer DDJ-RX2 Console">
+      <p class="caption">Consola Pioneer DDJ-RX2 – potencia, ritmo y control total 🔊</p>
+    </section>
+
+
+    <section class="music-player card">
+      <h2>🎧 Carga tu guaracha</h2>
+      <input type="file" id="musicFile" accept="audio/*" onchange="loadMusic(event)">
+      <audio id="audioPlayer" controls></audio>
+    </section>
+
+ 
+    <section class="comments card">
+      <h2>💬 Zona de comentarios</h2>
+      <form id="commentForm" onsubmit="addComment(event)">
+        <input type="text" id="name" placeholder="Tu nombre DJ..." required>
+        <textarea id="comment" placeholder="Deja tu opinión o saludo..." required></textarea>
+        <button type="submit">Publicar</button>
+      </form>
+      <ul id="commentList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 GuarachaQ RX2 Edition - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
